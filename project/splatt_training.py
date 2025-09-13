@@ -268,7 +268,7 @@ def save_gaussians_to_ply(gaussians, output_path):
             f.write(f"{scale[0]:.6f} {scale[1]:.6f} {scale[2]:.6f} ")
             f.write(f"{rot[0]:.6f} {rot[1]:.6f} {rot[2]:.6f} {rot[3]:.6f}\n")
     
-    print(f"✅ Saved {len(positions)} Gaussians to {output_path}")
+    print(f"Saved {len(positions)} Gaussians to {output_path}")
 
 def main():
     parser = argparse.ArgumentParser(description="Better Gaussian Splatting training")
