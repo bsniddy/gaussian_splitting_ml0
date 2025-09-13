@@ -30,7 +30,7 @@ brew install colmap
 ## Usage
 
 ### 1. Data Preparation
-Place input images in `project/images/` directory. Minimum 50 images recommended for quality reconstruction.
+Create your own image dataset and place input images in `project/images/` directory. Minimum 50 images recommended for quality reconstruction.
 
 ### 2. COLMAP Processing
 ```bash
@@ -54,12 +54,13 @@ python view_3d.py --ply_file outputs/model.ply --show_interactive
 
 ```
 project/
-├── images/              # Input images (JPG/PNG)
+├── images/              # Input images (JPG/PNG). Make your own image dataset.
 ├── sparse/              # COLMAP reconstruction data
 │   ├── cameras.bin      # Camera parameters
 │   ├── images.bin       # Image poses
 │   └── points3D.bin     # 3D point cloud
 ├── outputs/             # Generated models (.ply)
+|   |__ screenshots      # Screenshots of dif. angle outputs
 ├── splatt_training.py   # Training script
 └── view_3d.py          # Visualization script
 ```
