@@ -126,7 +126,7 @@ def save_visualization(fig, output_path: Path):
     
     print(f"Saving visualization to {output_path}")
     fig.savefig(output_path, dpi=150, bbox_inches='tight')
-    print(f"✅ Saved visualization to {output_path}")
+    print(f"Saved visualization to {output_path}")
 
 def main():
     parser = argparse.ArgumentParser(description="3D Gaussian Splat model viewer")
@@ -141,7 +141,7 @@ def main():
     
     ply_path = Path(args.ply_file)
     if not ply_path.exists():
-        print(f"❌ Error: PLY file not found at {ply_path}")
+        print(f"Error: PLY file not found at {ply_path}")
         return
     
     try:
@@ -164,12 +164,12 @@ def main():
             print("   - Close the window to continue")
             plt.show()
         
-        print("🎉 3D visualization completed!")
-        print(f"📁 Image saved to: {output_path}")
-        print(f"📊 Model contains {len(vertices):,} Gaussian points")
+        print("3D visualization completed!")
+        print(f"Image saved to: {output_path}")
+        print(f"Model contains {len(vertices):,} Gaussian points")
         
     except Exception as e:
-        print(f"❌ Error: {e}")
+        print(f"Error: {e}")
         return
 
 if __name__ == "__main__":
