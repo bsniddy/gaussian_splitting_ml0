@@ -1,0 +1,22 @@
+# Gaussian Splatting Project Dependencies
+# Install with: pip install -r requirements.txt
+
+# Core ML and Computer Vision
+torch==2.8.0
+torchvision==0.23.0
+torchaudio==2.8.0
+opencv-python==4.12.0.88
+numpy==2.2.6
+
+# Gaussian Splatting
+gsplat==1.5.3
+
+# Utilities
+rich>=12
+ninja==1.13.0
+jaxtyping==0.3.2
+markdown-it-py>=2.2.0
+pygments<3.0.0,>=2.13.0
+
+# Note: COLMAP needs to be installed separately
+# Visit: https://colmap.github.io/install.html
